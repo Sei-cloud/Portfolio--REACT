@@ -34,6 +34,7 @@ header {
     font-size: 24px;
     text-decoration: none;
     color: var(--text-color2); 
+    list-style-type: none;
 }
 
 nav ul {
@@ -130,14 +131,31 @@ section {
     flex: 1 1 calc(33% - 20px); 
     box-sizing: border-box;
     margin-bottom: 20px;
+    position: relative; /* Position relative for absolute positioning of the icon */
 }
-
+.work-header {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+}
 .work img {
     width: 100%;
     height: auto;
     border-radius: var(--border-radius);
 }
 
+/* GitHub icon styling */
+.github-link {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px; 
+}
+.github-link:hover .github-icon:hover {
+    opacity: 0.5;
+}
 /* Contact section styling */
 #contact {
     background-color: var(--border-color);
@@ -169,7 +187,6 @@ section {
     cursor: pointer;
 }
 
-/* Resume section styling */
 /* Resume section styling */
 #resume {
     background-color: var(--border-color);
@@ -250,7 +267,9 @@ footer {
 /* Responsive design */
 @media only screen and (max-width: 768px) {
     .header h1 {
-        font-size: 20px; /* Smaller font-size for mobile */
+        font-size: 40px; 
+        list-style-type: none;
+        text-decoration: none;
     }
     #about-me {
         font-size: 20px;
