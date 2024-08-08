@@ -1,7 +1,7 @@
 // src/components/Portfolio.jsx
 
 import React from 'react';
-import './App.css'; // Ensure the CSS file is imported here
+import '../assets/css/app.css'; 
 
 const Portfolio = () => {
     return (
