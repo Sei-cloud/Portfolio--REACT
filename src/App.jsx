@@ -1,23 +1,46 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import './assets/css/app.css'; 
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import "./assets/css/app.css";
 
 const AboutMe = () => (
   <section id="about-me">
-    <img src="./assets/images/profile.png" alt="profile" id="profile" height="80px" width="80px" />
-    <p><span>I'm Sei, a web developer</span> I build, design, and create amazing websites.</p>
+    <img
+      src="./assets/images/profile.png"
+      alt="profile"
+      id="profile"
+      height="80px"
+      width="80px"
+    />
+    <p>
+      <span>I'm Sei, a web developer</span> I build, design, and create amazing
+      websites.
+    </p>
   </section>
 );
 
 const Portfolio = () => (
-  <section id="portfolio" className="my-works">
+  <section id="my-works" className="my-works">
     <div className="work">
       <a href="https://sei-cloud.github.io/CSS-Snippet/">
         <header>CSS-Snippet</header>
-        <img src="./assets/images/CSS-Snippet.png" alt="snippet" />
+        <img src="../assets/images/CSS-Snippet.png" alt="CSS Snippet" />
       </a>
     </div>
-    {/* More work items */}
+    <div className="work">
+      <a href="https://sei-cloud.github.io/Horiseon-Home/">
+        <header>Horiseon-WebPage</header>
+        <img
+          src="/assets/images/digital-marketing-meeting.jpg"
+          alt="Horiseon"
+        />
+      </a>
+    </div>
+    <div className="work">
+      <a href="https://sei-cloud.github.io/mini-project/">
+        <header>Demo WebPage</header>
+        <img src="/assets/images/Demo-Webpage.png" alt="Demo Webpage" />
+      </a>
+    </div>
   </section>
 );
 
@@ -43,12 +66,17 @@ const Contact = () => (
 
 const Resume = () => (
   <section id="resume">
-    <a href="./assets/Resume.pdf" download>Download Resume</a>
+    <a href="./assets/Resume.pdf" download>
+      Download Resume
+    </a>
     <ul>
+      <li>HTML</li>
+      <li>CSS</li>
       <li>JavaScript</li>
       <li>React</li>
       <li>Node.js</li>
-      {/* Add more proficiencies */}
+      <li>Express</li>
+      <li>MongoDB</li>
     </ul>
   </section>
 );
@@ -60,10 +88,18 @@ const App = () => {
         <h1>Sei.</h1>
         <nav>
           <ul>
-            <li><Link to="/about-me">About Me</Link></li>
-            <li><Link to="/portfolio">Portfolio</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/resume">Resume</Link></li>
+            <li>
+              <Link to="/about-me">About Me</Link>
+            </li>
+            <li>
+              <Link to="/portfolio">Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/resume">Resume</Link>
+            </li>
           </ul>
         </nav>
       </header>
@@ -78,9 +114,27 @@ const App = () => {
       </main>
 
       <footer>
-        <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a
+          href="https://github.com/your-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://linkedin.com/in/your-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://twitter.com/your-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Twitter
+        </a>
       </footer>
     </Router>
   );

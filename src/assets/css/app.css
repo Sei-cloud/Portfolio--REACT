@@ -137,6 +137,7 @@ section {
 /* Resume section styling */
 #resume {
     background-color: var(--border-color);
+    color: var(--text-color2);
     padding: 20px;
     border-radius: var(--border-radius);
     text-align: center;
