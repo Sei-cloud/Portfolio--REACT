@@ -5,7 +5,7 @@
     --text-color2: #fff;
     --border-color: #2f2f30;
     --border-radius: 15px;
-    --font-size: 20px; /* Adjusted to be more consistent */
+    --font-size: 35px; 
 }
 
 /* General body styling */
@@ -26,11 +26,14 @@ header {
     color: var(--text-color2);
     padding: 10px 20px;
     border-radius: var(--border-radius);
+    margin-top: 1em;
 }
 
 .header h1 {
     margin: 0;
-    font-size: 24px; 
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--text-color2); 
 }
 
 nav ul {
@@ -65,6 +68,7 @@ section {
 }
 
 /* About Me section styling */
+/* About Me section styling */
 #about-me {
     display: flex;
     flex-direction: column;
@@ -73,12 +77,43 @@ section {
     color: var(--text-color1);
     padding: 20px;
     border-radius: var(--border-radius);
-    text-align: center; 
+    text-align: center;
+    font-size: var(--font-size);
 }
 
-#about-me img {
-    border-radius: 50%;
+.about-me-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the start of the container */
+    width: 100%; /* Ensure it takes the full width */
+    max-width: 1200px; /* Optional: limit the width for better readability */
 }
+
+.profile-image {
+    border-radius: 50%; /* Round the image */
+    margin-right: 20px; /* Space between image and text */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.about-me-text {
+    flex: 1; /* Take up the remaining space */
+}
+
+.about-me-text-section {
+    background-color: var(--border-color); /* Same background color as the section */
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+  
+  #profile {
+    height: 80px; /* Set height if needed */
+    width: 80px; /* Set width if needed */
+  }
+  
+  #about-me {
+    padding: 20px; /* Adjust padding as needed */
+  }
 
 /* Portfolio section styling */
 .my-works {
@@ -135,6 +170,7 @@ section {
 }
 
 /* Resume section styling */
+/* Resume section styling */
 #resume {
     background-color: var(--border-color);
     color: var(--text-color2);
@@ -143,38 +179,82 @@ section {
     text-align: center;
 }
 
-#resume a {
-    color: rgb(2, 255, 128);
-    text-decoration: none;
-    font-size: 18px;
+.resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+.resume-section {
+    background-color: var(--border-color);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.resume-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.resume-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resume-section li {
+    margin-bottom: 10px;
+}
+
+.download-resume {
+    display: inline-block;
+    background-color: rgb(2, 255, 128);
+    color: var(--text-color1);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.download-resume:hover {
+    background-color: rgb(0, 200, 100);
+}
+
 
 /* Footer styling */
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-    background-color: var(--border-color);
-    color: var(--text-color2);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
     border-radius: var(--border-radius);
-}
-
-footer a {
-    color: var(--text-color2);
+  }
+  
+  /* Additional styles for footer links */
+  footer a {
+    color: #fff;
     text-decoration: none;
-}
-
-footer a:hover {
+    margin: 0 1em;
+  }
+  
+  footer a:hover {
     text-decoration: underline;
-}
+  }
+  
 
 /* Responsive design */
 @media only screen and (max-width: 768px) {
     .header h1 {
         font-size: 20px; /* Smaller font-size for mobile */
     }
-
+    #about-me {
+        font-size: 20px;
+    }
     nav ul {
         flex-direction: column;
         align-items: center;
