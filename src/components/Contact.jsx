@@ -1,7 +1,9 @@
 import React from 'react';
+import '../assets/css/app.css';
 
 const Contact = () => (
   <section id="contact">
+    <h1>Contact</h1>
     <form>
       <label>
         Name:
