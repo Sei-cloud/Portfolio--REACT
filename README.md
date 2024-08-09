@@ -19,9 +19,20 @@ This portfolio was built to serve as a central hub for showcasing my web develop
 The main sections of this portfolio include:
 
 - **Home Page:** A brief introduction and a summary of my professional background.
+
+![About-me](./public/assets/screen-shots/About-me.png)
+
 - **Portfolio:** A showcase of selected projects with links to live demos and GitHub repositories.
+
+![Portfolio](./public/assets/screen-shots/Portfolio.png)
+
 - **Contact:** A form to easily get in touch with me.
+
+![Contact](./public/assets/screen-shots/Contact.png)
+
 - **Resume:** A downloadable resume with a detailed list of my proficiencies in front-end and back-end development.
+
+![Resume](./public/assets/screen-shots/Resume.png)
 
 ## Features
 

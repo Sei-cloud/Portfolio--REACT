@@ -22,7 +22,7 @@ const Resume = () => (
           <li>MongoDB</li>
         </ul>
       </div>
-      <a href="../assets/Resume.pdf" download="resume.pdf" className="download-resume">
+      <a href="../assets/resume.pdf" download="resume.pdf" className="download-resume">
         Download Resume
       </a>
     </div>
