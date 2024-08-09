@@ -77,3 +77,5 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 ## URL
 
 Github URL: https://github.com/Sei-cloud/Portfolio--REACT
+
+Deployed URL: https://main--dazzling-peony-0d9741.netlify.app/
