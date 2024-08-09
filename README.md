@@ -48,11 +48,11 @@ To run this portfolio project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Sei-cloud/portfolio.git
+    git clone https://github.com/Sei-cloud/Portfolio--REACT.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd portfolio
+    cd Portfolio--REACT
     ```
 3. Install the dependencies:
     ```bash
