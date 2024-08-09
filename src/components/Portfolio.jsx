@@ -62,6 +62,17 @@ const Portfolio = () => (
       </a>
     </div>
     <div className="work">
+      <a href="https://note-taker-express-js-sei-cloud.onrender.com/" target="_blank" rel="noopener noreferrer">
+        <header className="work-header">
+          Note-Taker
+          <a href="https://github.com/Sei-cloud/Note-Taker---Express.js" target="_blank" rel="noopener noreferrer" className="github-link">
+            <img src={githubIcon} alt="GitHub" className="github-icon" />
+          </a>
+        </header>
+        <img src="./assets/images/Note-Taker.png" alt="Horiseon" />
+      </a>
+    </div>
+    <div className="work">
       <a href="https://sei-cloud.github.io/Horiseon-Home/" target="_blank" rel="noopener noreferrer">
         <header className="work-header">
           Horiseon-WebPage
