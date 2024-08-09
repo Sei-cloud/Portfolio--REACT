@@ -131,10 +131,11 @@ section {
     border-radius: var(--border-radius);
 }
 
-.my-works h1 {
+.my-works h1, a{
     font-size: 28px;
     margin-bottom: 20px;
     color: var(--text-color2);
+    text-decoration: none;
 }
 
 .work {
@@ -281,6 +282,7 @@ footer {
     text-align: center;
     padding: 1em;
     border-radius: var(--border-radius);
+    
 }
 
 /* Additional styles for footer links */
@@ -288,6 +290,7 @@ footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 1em;
+    font-size: 20px;
 }
 
 footer a:hover {

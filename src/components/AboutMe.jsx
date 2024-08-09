@@ -3,6 +3,7 @@ import '../assets/css/app.css';
 
 const AboutMe = () => (
   <section id="about-me" className="about-me">
+    <h1>About Me</h1>
     <div className="about-me-content">
       <img
         src="./assets/images/profile.png"

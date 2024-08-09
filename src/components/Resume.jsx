@@ -4,6 +4,7 @@ import '../assets/css/app.css';
 const Resume = () => (
   <section id="resume">
     <div className="resume-content">
+      <h1>Resume</h1>
       <div className="resume-section">
         <h2>Front-End Skills</h2>
         <ul>
@@ -21,7 +22,7 @@ const Resume = () => (
           <li>MongoDB</li>
         </ul>
       </div>
-      <a href="../assets/Resume.pdf" download className="download-resume">
+      <a href="../assets/Resume.pdf" download="resume.pdf" className="download-resume">
         Download Resume
       </a>
     </div>
